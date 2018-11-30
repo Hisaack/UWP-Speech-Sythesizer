@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-us" Name="HomeControlCommandSet_en-us">
+    <CommandPrefix>Assistance</CommandPrefix>
+    <Example>Control alarm, temperature, light and others</Example>
+    
+    <Command Name="CheckTemperature">
+      <Example>Check temperature</Example>
+      <ListenFor>check [current] temperature</ListenFor>
+      <Feedback>Checking temperature</Feedback>
+      <VoiceCommandService Target="VoiceCommandService" />
+    </Command>
+    
+    <Command Name="CheckTemperature1">
+      <Example>Check temperature</Example>
+      <ListenFor>check [current] temperature</ListenFor>
+      <Feedback>No feed back</Feedback>
+      <VoiceCommandService Target="VoiceCommandService" />
+    </Command>
+
+
+  </CommandSet>
+</VoiceCommands>
